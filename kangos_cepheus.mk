@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit palladium GSM telephony parts
+# Inherit kangos GSM telephony parts
 $(call inherit-product, vendor/kangos/config/gsm.mk)
 
 $(call inherit-product, vendor/kangos/config/telephony.mk)
 
-# Inherit some common palladium stuff.
+# Inherit some common kangos stuff.
 $(call inherit-product, vendor/kangos/config/common.mk)
 
 # Device identifier. This must come after all inclusions
@@ -42,4 +42,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Include firmware
 #$(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
-
